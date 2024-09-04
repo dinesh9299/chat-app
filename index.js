@@ -11,6 +11,8 @@ const { app, server } = require("./socket/index");
 
 // const app = express();
 
+console.log("frontend", process.env.FRONTEND_URL);
+
 app.use(
   cors({
     origin: process.env.FRONTEND_URL || "*",
